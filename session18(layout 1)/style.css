@@ -1,0 +1,101 @@
+body {
+	background-color : #eee;
+}
+
+div.container {
+	margin 			 	: 0 auto;
+	width				: 950px;
+	background-image 	: url('images/bg.jpg');
+	background-repeat	: no-repeat;
+	min-height		    : 871px;
+}
+
+.badboy {
+	clear : both !important;
+	width : 0    !important;
+	height: 0    !important;
+	min-height : 0    !important;
+}
+
+div {
+	border : 2px dotted transparent;
+}
+
+div.floor {
+	padding      : 1px 0;
+	margin-top   : 4px; 
+	border-color : red;
+}
+
+div.floor.top {
+	min-height: 120px;
+}
+
+div.floor.center {
+	min-height: 510px;
+}
+
+div.floor.bottom {
+	min-height: 200px;
+}
+
+div.left {
+	float : left;
+	border-color : blue;
+}
+
+div.right {
+	float : right;
+	border-color : green;
+}
+	
+div.floor.top div.left {
+	width 		: 350px;
+	margin  	: 10px 10px; 
+	min-height  : 110px;
+}
+
+div.floor.top div.right {
+	width 		: 350px;
+	margin  	: 10px 10px; 
+	min-height  : 110px;
+}
+
+div.floor.top div.center {
+	border-color: gray;
+	width 		: 130px;
+	margin  	: 2px auto;
+	min-height  : 130px;
+}
+
+div.floor.center div.right {
+	width 	    : 400px;
+	min-height  : 500px;
+}
+
+div.floor.center div.textleft {
+	margin-right : 450px;
+	border-color : gray; 
+	width        : auto;
+	min-height   : 500px; 	
+}
+
+div.floor.bottom div {
+	margin: 3px auto;
+	border-color : darkorange;
+}
+
+div.floor.bottom div.image {
+	width        : 500px;
+	min-height   : 80px; 
+}
+
+div.floor.bottom div.links {
+	width        : 600px;
+	min-height   : 50px; 
+}
+
+div.floor.bottom div.copyright {
+	width        : 700px;
+	min-height   : 40px; 
+}

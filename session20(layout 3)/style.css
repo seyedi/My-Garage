@@ -1,0 +1,85 @@
+div.backimg {
+	background-image : url('images/backimg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top left;
+	background-attachment: fixed;
+}
+
+div.mycontainer {
+    background-color: red;
+	width : 970px;
+	padding: 1px 10px;
+	margin : 0 auto;
+}
+
+div.mycontainer > div.mail {
+	background-color: #fc0;
+	margin-top : 10px;
+}
+
+header,section.top,section.bottom,footer {
+	margin-top : 10px;
+}
+
+header { 
+	background-color: #fff;
+}
+
+header div.logo {
+	border  : 1px solid #000;
+}
+
+header nav {
+	border  : 1px solid #000;	
+}
+
+section.top {
+	background-color: #fff;
+}
+
+section.top div.slide {
+	background-image :url('images/slide.jpg'); 
+	background-repeat: no-repeat;
+	outline: 1px solid #000;
+}
+
+section.top div.text {
+	outline: 1px solid #000;
+}
+
+section.middle {
+	background-color : #fff;
+	border 			 : 2px dotted black;
+}
+
+section.middle div.left {
+	background-color : #eee;
+	margin-right: 15px;
+}
+
+section.middle div.guest {
+	background-color : #eee;
+}
+
+section.bottom {
+	background-color : #222;
+}
+
+section.bottom div:first-child {
+	margin-right : 20px;
+}
+
+section.bottom div {
+	outline : 1px dotted yellow; 
+	margin-top : 20px;
+}
+
+footer {
+	background-color: transparent;
+}
+
+footer div{
+	outline : 2px dashed white;
+}
+

@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8" />
+	<title>betitle</title>
+	<style type="text/css">
+
+		* {
+			padding : 0;
+			margin	: 0;
+		}
+
+		body {
+			background-color : #222;
+		}
+		div.container {
+			margin : 0 auto;
+			width  : 950px;
+		}
+
+		.badboy {
+			height : 0;
+			width  : 0;
+			clear  : both;
+		}
+
+		section.top {
+			margin   : 10px auto;
+			width 	 : 850px;
+			position : relative;
+			overflow : visible;
+			background-image : url('images/1.jpg');
+			border-radius 	 : 10px;
+		}
+
+		section.top menu {
+			list-style-type : none;
+			width 			: 1000px;
+		}
+
+		section.top menu li {
+			float : left;
+			width : 0 ;
+			height:	250px;
+			border-radius 	 : 10px;
+			-webkit-transition : 1000ms;
+		}
+
+		section.top menu li:first-child {
+			width : 0 !important;
+		}
+
+		section.top menu li a {
+			opacity	 : 0.6;
+			z-index	 : -1;
+			position : absolute;
+			top 	 : 98%;
+			background-color : #555;
+			text-transform 	 : capitalize;
+			text-decoration	 : none;
+			display			 : block;
+			padding 		 : 10px 20px;
+			color 			 : white;
+			border-radius 	 : 0 0 10px 10px;
+			font-size		 : 20px;
+		}
+
+		a.home {
+			left : 10%;
+		}
+
+		a.portfolio {
+			left : 30%;
+		}
+
+		a.blog {
+			left : 55%;
+		}
+
+		a.support {
+			left : 80%;
+		}
+
+		section.top menu li:hover {
+			width : 850px;
+		}
+
+		section.top menu li:hover a {
+			background-color : #444;
+			color 			 : yellow;
+			opacity			 : 1;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<section class="top">
+			<menu>
+				<li>
+					<a class="home" href="#">home</a>
+				</li>
+				<li style="background-image : url('images/2.jpg');">
+					<a class="portfolio" href="#">portfolio</a>
+				</li>
+				<li style="background-image : url('images/3.jpg');">
+					<a class="blog" href="#">blog</a>
+				</li>
+				<li style="background-image : url('images/4.jpg');">
+					<a class="support" href="#">support</a>
+				</li>
+			</menu>
+			<div class="badboy"></div>
+		</section>
+	</div>
+</body>
+</html>

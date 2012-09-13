@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8" />
+	<title>--5.6.1391--</title>
+	<style type="text/css">
+		* {
+			padding : 0;
+			margin  : 0;
+		}
+		section {
+			margin 	: 50px auto;
+			width  	: 600px;
+			overflow: hidden;
+			height 	: 300px;
+		}
+
+		section ul {
+			width 	: 1600px;
+			height	: inherit;
+			list-style-type : none;			
+		}
+
+		section li {
+			height : inherit;
+			float  : left;
+			width  : 150px;
+			-webkit-transition : 450ms;
+		}
+
+		section li:last-child {
+		 	padding-right : 1000px;
+		}
+
+		section:hover li {
+			width : 50px;
+		}
+
+		section li:hover {
+			width : 450px;
+		}
+
+	</style>
+</head>
+<body>
+	<section>
+		<ul>
+			<li style="background-image:url('images/1.jpg'); background-repeat:no-repeat;"></li>  <!-- chera ma style ra inja inline neveshtim : chon badan ba php mikhaim in html ro gnerate konim yani agar dar folder images aks ezaf shod khodkar be slide ma ezaf besh -->
+			<li style="background-image:url('images/2.jpg'); background-repeat:no-repeat;"></li>
+			<li style="background-image:url('images/3.jpg'); background-repeat:no-repeat;"></li>
+			<li style="background-image:url('images/4.jpg'); background-repeat:no-repeat;"></li>
+		</ul>
+	</section>
+</body>
+</html>

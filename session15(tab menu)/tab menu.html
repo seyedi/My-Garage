@@ -1,0 +1,208 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8" />
+	<title>*** betitle ***</title>
+	<style type="text/css">
+		* {
+			padding : 0;
+			margin 	: 0;
+		}
+
+		body {
+			background-color : #333;
+		}
+
+		div.container {
+			width  : 950px;
+			margin : 0 auto;
+		}
+
+		div.content {
+			/*border-top 		 : 2px dotted darkmagenta;*/
+			width 			 : 950px;
+			height			 : 700px;
+			margin 			 : 0 auto;
+			background-color : #ccc;
+		}
+
+		nav.menu {
+			margin-top : 35px;
+		}
+
+		.badboy {
+			width  : 0;
+			height : 0;
+			clear  : both;
+		}
+
+		nav.menu menu {
+			list-style-type : none;
+		}
+
+		nav.menu li {
+			position 		 : relative;
+			background-color : darkmagenta;
+			margin-right	 : 35px;
+			float 			 : left;
+			border-left		 : 2px solid #ccc;
+			border-top-left-radius	 : 10px;
+			box-shadow: 0px 10px 40px white;
+		}
+
+		span.triangle {
+			width 		 : 0;
+			height		 : 0;
+			border-style : solid;
+			border-width : 0px  50px  58px  0px;
+			border-color : transparent transparent darkmagenta transparent ;
+			position  	 : absolute;
+			top 		 : 0;
+			left 		 : 100%;
+		}
+
+		nav.menu a {
+			color 			: white;
+			font-size		: 20px;
+			display			: block;
+			padding			: 15px 20px; 
+			font-family		: "Comic Sans MS";
+			text-decoration : none;
+			text-transform	: capitalize;
+		}
+
+		nav.menu li:hover {
+			background-color : #ddd;
+			transition-duration 		: 1s;
+			-o-transition-duration 		: 1s;
+			-ms-transition-duration 	: 1s;
+			-moz-transition-duration 	: 1s;
+			-webkit-transition-duration : 1s;
+			z-index : 100;
+		}
+
+		nav.menu li:hover a {
+			transition-duration 		: 1s;
+			-o-transition-duration 		: 1s;
+			-ms-transition-duration 	: 1s;
+			-moz-transition-duration 	: 1s;
+			-webkit-transition-duration : 1s;
+			color : black;
+		}
+
+		nav.menu li:hover span.triangle{
+			transition-duration 		: 1s;
+			-o-transition-duration 		: 1s;
+			-ms-transition-duration 	: 1s;
+			-moz-transition-duration 	: 1s;
+			-webkit-transition-duration : 1s;
+			border-color : transparent transparent #ddd transparent ;
+			z-index : 100;
+		}
+
+		div.right {
+			position : absolute;
+			top   	 : 20px;
+			right 	 : 40px;
+			width    : 10px;
+			height   : 10px;
+			background-color : white;
+			border-radius 	 : 5px;
+			box-shadow 		 : 1px 1px 20px yellow;
+				/* Safari and Chrome: */
+			-webkit-animation-name			  :myfirst;
+			-webkit-animation-duration		  :1s;
+			-webkit-animation-timing-function :linear;
+			-webkit-animation-delay			  :1s;
+			-webkit-animation-iteration-count :infinite;
+			-webkit-animation-direction		  :alternate;
+			-webkit-animation-play-state	  :running;
+			}
+			@-webkit-keyframes myfirst
+			{
+			0%   {background:white;  right:40px; 	top:40px;}
+			25%  {background:yellow; right:40px; 	top:140px;}
+			50%  {background:red; 	 right:40px; 	top:240px;}
+			75%  {background:green;  right:40px; 	top:340px;}
+			100% {background:white;  right:40px; 	top:440px;}
+			}
+		
+
+		div.left {
+			position : absolute;
+			top   	 : 20px;
+			left 	 : 40px;
+			width    : 10px;
+			height   : 10px;
+			background-color : white;
+			border-radius 	 : 5px;
+			box-shadow 		 : 1px 1px 20px yellow;
+				/* Safari and Chrome: */
+			-webkit-animation-name			  :mysecond;
+			-webkit-animation-duration		  :1s;
+			-webkit-animation-timing-function :linear;
+			-webkit-animation-delay			  :1s;
+			-webkit-animation-iteration-count :infinite;
+			-webkit-animation-direction		  :alternate;
+			-webkit-animation-play-state	  :running;
+			}
+			@-webkit-keyframes mysecond
+			{
+			0%   {background:white;  left :40px; 	top:40px;}
+			25%  {background:yellow; left :40px; 	top:140px;}
+			50%  {background:red; 	 left :40px; 	top:240px;}
+			75%  {background:green;  left :40px; 	top:340px;}
+			100% {background:white;  left :40px; 	top:440px;}
+			}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<nav class="menu">
+			<menu>
+				<li>
+					<a href="#">
+						home
+						<span class="triangle"></span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						contact me
+						<span class="triangle"></span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						portfolio
+						<span class="triangle"></span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						blog
+						<span class="triangle"></span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						forum
+						<span class="triangle"></span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						about us
+						<span class="triangle"></span>
+					</a>
+				</li>
+			</menu>
+			<div class="badboy"></div>
+		</nav>
+		<div class="content"></div>
+	</div>
+	<div class="left"></div>
+	<div class="right"></div>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE HTML>
+<html lang="fa-IR">
+<head>
+	<meta charset="UTF-8" />
+	<title>betitle</title>
+	<style type="text/css">
+
+		* {
+			padding : 0;
+			margin  : 0;
+		}
+
+		body {
+			background : url('images/bg.jpg');
+		}
+
+		header.main {
+			
+		}
+
+		nav.menu {
+			margin-top : 49px;
+			margin-right : 50px;
+		}
+
+		.badboy {
+			width  : 0;
+			height : 0;
+			clear  : both;   
+		}
+
+		nav.menu menu {
+			list-style-type : none;
+		}
+
+		nav.menu li {
+			position :  relative;
+			float 		: right;
+			background-color : #00acee;
+			margin-left	: 15px;
+
+			transition : 200ms;
+			-webkit-transition : 200ms;
+			-moz-transition : 200ms;
+			-o-transition : 200ms;
+			-ms-transition : 200ms; /*ma minivisim vali hanooz ms kari nakardeh ma baraye badeha minivesim*/
+		}
+
+		nav.menu li:first-child {
+			margin-left : none;
+		}
+
+		nav.menu li:hover {
+			top : 4px; /*chon position li ro relative kardim nesbat be jaye khodesh taghir mikoneh*/
+		}
+
+		nav.menu li:hover a {
+			color : yellow;
+		}
+
+		nav.menu a {
+			position 	: relative;
+			text-decoration : none;
+			color 			: #ffffcc; 
+			font-size 		: 30px;
+			font-weight 	: bold;
+			padding-right	: 10px;
+			padding-left 	: 10px;
+			padding-top 	: 49px;
+			padding-bottom: : 10px;
+			display			: block;
+			direction 		: rtl;
+			font-family		: Arial;
+			
+		}
+
+		.triangle {
+			width : 0px;
+			height: 0px;
+			border-style : solid;
+			position 	 : absolute;
+			border   : solid transparent;
+			border-top-color : #00ACEE;
+		}
+
+		nav.menu .triangle.left {
+			right : 100%;
+			top   : 0;
+			border-width : 88px 0px 0px 4px;
+		}
+
+		nav.menu .triangle.right {
+			left : 100%;
+			top  : 0;
+			border-width : 87px 4px 0px 0px;
+		}
+
+		nav.menu .triangle.bottom {
+			right: 10%;
+			top  : 100%;
+			border-width : 7px 7px 0px 4px;
+		}
+	</style>
+</head>
+
+<body>
+	<header class="main">
+		<nav class="menu">
+			<menu>
+				<li>
+					<a href="">دکّان!
+						<span class="triangle left"></span>  <!-- age div bezari ghanoon ro kharab kardi nabayad display bache block vali baba inline bashe --> 
+						<span class="triangle right"></span>
+						<span class="triangle bottom"></span>
+					</a>
+				</li>
+				<li>
+					<a href="">طراحاش*
+						<span class="triangle left"></span>  <!-- age div bezari ghanoon ro kharab kardi nabayad display bache block vali baba inline bashe --> 
+						<span class="triangle right"></span>
+						<span class="triangle bottom"></span> <!-- dotta kelaseh ha -->
+					</a>
+				</li>
+				<li>
+					<a href="">اطلاعات؟
+						<span class="triangle left"></span>  <!-- age div bezari ghanoon ro kharab kardi nabayad display bache block vali baba inline bashe --> 
+						<span class="triangle right"></span>
+						<span class="triangle bottom"></span>
+					</a>
+				</li>
+				<li>
+					<a href="">دخول'
+						<span class="triangle left"></span>  <!-- age div bezari ghanoon ro kharab kardi nabayad display bache block vali baba inline bashe --> 
+						<span class="triangle right"></span>
+						<span class="triangle bottom"></span>
+					</a>
+				</li>
+			</menu>
+			<div class="badboy"></div>
+		</nav>
+	</header>
+</body>
+</html>
